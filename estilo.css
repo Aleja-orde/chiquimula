@@ -1,0 +1,233 @@
+/* Estilos Generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    color: #8B4513; /* Color café oscuro para títulos */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #4CAF50; /* Color verde para subtítulos */
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #8B4513;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #FFD700; /* Color amarillo dorado */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e0b000;
+}
+
+.bg-light {
+    background-color: #fff;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Header */
+header {
+    background: #8B4513; /* Café oscuro */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 100px;
+    border-bottom: #FFD700 3px solid;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+header .slogan {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+#hero {
+    min-height: 400px;
+    background: url('hero-dobladas.jpg') no-repeat center center/cover; /* Necesitas una imagen de fondo */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+#hero h2 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* Nosotros Section */
+#nosotros p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+/* Menu Section */
+#menu {
+    padding: 50px 0;
+}
+
+.menu-item {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    color: #4CAF50;
+    font-size: 2em;
+}
+
+.menu-item p {
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #8B4513;
+}
+
+/* Contacto Section */
+#contacto p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.map-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header .slogan {
+        font-size: 1em;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .menu-item h3 {
+        font-size: 1.6em;
+    }
+}
